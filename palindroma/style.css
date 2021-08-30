@@ -1,0 +1,86 @@
+/* regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* do uno sfondo alla pagina */
+body{background-color: goldenrod;}
+
+/* setto il mio h1 (titolo della pagina) con uno sfondo un font-family un background
+un pò di padding */
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:#0b91a8;
+    color: aliceblue;
+    padding: 5px;
+}
+/* do larghezza altezza al mio pseudo-form sfondo un po di box-shadow e un border-radius
+tanto per renderlo carino graficamente */
+.form {
+    width: 20vw;
+    height: 70vh;
+    margin: 10vh auto;
+    box-shadow: 0px 0px 4px 4px rgb(58, 57, 57);
+    background-color: rgb(194, 194, 194);
+    border-radius: 2px;
+}
+/* ho dato un po di personalizzazione al mio input padding di 8px border-radius e ho tolto il 
+bordo nativo poiché non mi piaceva */
+.form input{
+    margin-left: 50%; transform: translate(-50%);margin-top:1vh ;
+    outline: none; border: 1px solid grey;
+    padding: 5px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 700;
+    color: grey;
+    font-size: 0.9em;
+    box-shadow: 0px 0px 2px 2px grey;
+}
+/* ho creato due div per contenere il primo la parola rovesciata e il secondo se fosse o meno palindroma */
+.reverse, .risultato{
+    width: 76%;
+    height: 5vh;
+    border: 1px solid grey;
+    margin-left: 12%;
+    margin-top: 10vh;
+    font-family: sans-serif;
+    color: gray;
+    text-align: center;
+    padding: 8PX;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px 2px grey;
+}
+/* sezione che contiene di fatto i miei due bottoni annulla e start */
+.bottone {
+    width: 27%;
+    height: 10vh;
+    margin-left: 35%;
+    margin-top: 15vh;
+}
+/* i miei bottoni ottimizzati e personalizzati  */
+button {
+    outline: none;
+    border: 1px solid grey;
+    padding: 5px;
+    margin-top: 3vh ;
+    border-radius: 3px;
+   
+}
+/* passando con il mouse lo sfondo il testo e il puntatore cambiano  */
+button:hover{
+    cursor: pointer;
+    background-color: rgb(112, 112, 112);
+    transition: 2s;
+    color: rgb(56, 56, 56);
+}
+/* ho cambiato colore all'hover dell'imput  */
+input:hover::-webkit-input-placeholder {
+    
+    transition: 2s;
+   color: rgb(65, 97, 236);
+}
